@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <html lang="en-US">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Paintball Quiz App</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  <main class="container">  
+    <section class="js-start">
+      <h1>Paintball Quiz</h1>
+      <h3>How much do you think you know about paintball?</h3>
+      <img class='paintballPic' src='pictures/ryangpaintball.jpg' alt='picture of professional paintball player in a match'>
+      <button>Start Quiz</button>
+    </section>
+
+    <section class="js-quiz">
+      <h2>Question Title</h2>
+      <form>
+        <input>Option</input>
+        <input>Option</input>
+        <input>Option</input>
+        <input>Option</input>
+      </form>
+      <div class='js-counter'></div>
+      <div class='results-counter'></div>
+      <button>Submit</button>
+    </section>
+
+    <section class="js-final">
+      <h2>Let's see those results!</h2>
+      <img class='paintballCelebrate' src='pictures/paintballcheer.jpg'
+                            alt='photo of a group of paintball players celebrating' />
+      <p>Congrats you scored x out of y correct!</p>
+      <button>Restart Quiz</button>
+    </section>
+</main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

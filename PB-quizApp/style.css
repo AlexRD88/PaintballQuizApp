@@ -1,0 +1,124 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+    text-align:center;  
+  }
+  body{
+    background-color:black;
+  }
+  .paintballPic {
+    height:auto;
+    width:75%;
+  }
+  .paintballCelebrate {
+    height:auto;
+    width:75%;
+  }
+  h1{
+    text-align:center;
+    font-size: 40px;
+    padding: 15px;
+    background-color:#FCDE50;
+    color:black;
+  }
+  .container {
+    border: 1px solid white;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5%;
+    margin-bottom:5%;
+    padding:20px;
+    display:flex; 
+    align-items:center;
+    justify-content: center;
+    
+    
+  }
+  form {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    
+    
+    
+  }
+  .answer {
+    border: 1px solid white;
+    border-radius: 5px;
+    min-width: 90px;
+    min-height: 90px;
+    background-color:black;
+    margin-left:auto;
+    margin-right:auto;
+    padding:5px;
+    
+    
+  }
+  
+  
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+  }
+  h3 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  
+  button {
+    display:block;
+    color:black;
+    padding: 10px 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  button:hover {
+    background-color:#1E7DCF;
+  }
+  
+  .js-quiz, .js-final {
+    display: none;
+  }
+  
+  .js-quiz form {
+    list-style: none;
+    padding:0;
+  
+  }
+  .js-quiz input  {
+    cursor:pointer;
+  }
+  .js-counter{
+    margin-top:20px;
+    font-size:25px;
+  }
+  .selected {
+    border-color: #01BFBF;
+    background-image:url('https://i.imgur.com/QIHJxBp.png');
+    background-size: 75%;
+    background-position: center center;
+    background-repeat:no-repeat;
+    
+  }
+  
+  @media only screen and (max-width: 556px) {
+    form {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+    }
+  }
