@@ -1,69 +1,43 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name='description' content='Quiz about Paintball.'>
-    <title>Paintball Quiz App!</title>
-    <link href='styles.css' rel='stylesheet' type='text/css'/>
-</head>
-
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Paintball Quiz App</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 <body>
-    <main role='main'>
-<!-- starting display  -->
-        <section id='start-page' class='blackbox'>
-            <div id='title'>
-                <h1>How Much do you know about paintball?</h1>
-                <img class='paintballpic' src='http://www.ryangreenspan.com/wp-content/uploads/2016/09/NXL2016GLOFri_0268-1104x736.jpg' alt='tournament paintball picture'>
-                <h3 class='start-text'>Test your paintball knowledge with this interactive quiz.<br>Click the button
-                    below to begin!</h3>
-            </div>
-            <button class='button'>Start</button>
-        </section>
-<!-- question page display -->
-            <section id='question-page' class='hidden blackbox'>
-                <form id='paintball-form' method='get'>
-                    <fieldset name='question-set'>
-                        <div id='quiz-question' class='js-paintball-question'></div>
-                        <div class='js-paintball-answers' role='radiogroup'></div>
-                        <!-- submit answer button hidden until start button pressed -->
-                        <button id='submit-answer' class='button hidden disabled' type='submit' disabled>Submit</button>
-                    </fieldset>
-                </form>
-                <!-- if answer is correct display -->
-                <div id='feedbackcorrect' class='all-feedback hidden'>
-                    <h3>Correct! You must know a bit about paintball huh?</h3><br>
-                    <img class='ref-clean' src='pictures /clean.jpg'
-                        alt='referee signaling you clean'>
-                </div>
-                <!-- if answer is not correct display -->
-                <div id='feedbackincorrect' class='hidden'><br></div>
-                <img class='ref-hit hidden' src='pictures /hit.jpg'
-                    alt='referee calling you out'>
-                 <!-- results counter -->
-                <div class='results-counter'></div>
-                 <!-- next button -->
-                <button id='next-question' class='button hidden' type='submit'>Next</button>
-            </section>
-<!-- final page -->
-                <section id='final-page' class='hidden blackbox'>
-                    <h1>Let's see those results!</h1>
-                    <!-- final score tally -->
-                    <div id='final-correct'><br></div>
-                    <div>
-                        <img class='paintball-cheering' src='pictures /paintballcheer.jpg'
-                            alt='paintball players cheering' /><br>
-                        <p class='rematch'>Want to give it another shot? Click the button below to take the quiz again.</p>
-                    </div>
-                    <!-- restart button -->
-                    <button id='retake' type='submit'>Restart Quiz!</button>
-                </section>
+  <main class="container">  
+    <section class="js-start">
+      <h1>Paintball Quiz</h1>
+      <h3>How much do you think you know about paintball?</h3>
+      <img class='paintballPic' src='http://www.ryangreenspan.com/wp-content/uploads/2016/09/NXL2016GLOFri_0268-1104x736.jpg' alt='tournament paintball picture'>
+      <button>Start Quiz</button>
+    </section>
 
-    </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src='scripts.js'></script>
+    <section class="js-quiz">
+      <h2>Question Title</h2>
+      <form>
+        <input>Option</input>
+        <input>Option</input>
+        <input>Option</input>
+        <input>Option</input>
+      </form>
+      <div class='js-counter'></div>
+      <div class='results-counter'></div>
+      <button>Submit</button>
+    </section>
+
+    <section class="js-final">
+      <h2>Let's see those results!</h2>
+      <img class='paintballCelebrate' src='pictures/paintballcheer.jpg' alt='a group of paintball players celebrating'/>
+      <p>Congrats you scored x out of y correct!</p>
+      <button>Restart Quiz</button>
+    </section>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
